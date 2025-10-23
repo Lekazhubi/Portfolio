@@ -1,0 +1,533 @@
+
+.rubik-paragraph {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+*{
+  font-family:"Rubik", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* sidebar*/
+.allsidebar{
+  width:200px;
+  background-color: #1f1f1f;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex: 1;
+}
+.profileid{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+  border-radius: 30px;
+}
+.profileid h1{
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.profilepicture{
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid rgba(109, 109, 109, 0.377);
+}
+.icon{
+  width: 25px;
+  height: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.267);
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+.icon:hover{
+  background-color: rgba(255, 255, 255, 0.267);
+  transform: scale(1.2);
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;    
+}
+ul {
+  list-style-type: none;
+}
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  gap: 15px; 
+}
+.sidebar{
+  margin-top: 80px;
+  display: flex;
+  text-align: left;
+  line-height: 45px;    
+}
+/* maincontent */
+.main-content{
+  flex: 2;
+  padding-left: 250px;
+  padding-right:50px ;
+  width: 100%;
+  background-color:whitesmoke;
+}
+/*home*/
+.home{
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.welcome{
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#welcome h1{
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+}
+#welcome p{
+  font-size: 1rem;
+  color: black;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  height: 100px;
+}
+.buttons a{
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-weight: 600;    
+}
+#aboutmebtn, #cvbtn{
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1f1f1f;
+}
+.myphoto{
+  width: 40%;
+  color: black;
+  display: flex;
+
+}
+.sitephoto{
+  width:100%;
+  height: 500px;
+  border-radius: 20px 0 20px 0;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px rgba(102, 102, 102, 0.5);
+}
+.about {
+  display: flex;
+  padding: 80px 20px;
+  min-height: 30vh;
+  justify-content: center;
+}
+.abouttxt {
+  flex: 1 1 480px;
+}
+.abouttxt h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 50px;
+  position: relative;
+}
+.abouttxt h1::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #00b4d8;
+  border-radius:10px;
+}
+.abouttxt p {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #333;
+}
+.skills {
+  text-align: center;
+  background: white;
+  min-height: 70vh;
+}
+.skills h2 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 40px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding-bottom:50px;
+}
+.skillcard {
+  flex: 1 1 250px;
+  max-width: 200px;
+  background: whitesmoke;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.skillcard h3 {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 700;
+}
+.skillcard p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.level {
+  font-weight: 500;
+  color: black;
+}
+.edsection {
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.edwrapper {
+  text-align: start;
+  width:100%;
+}
+.edwrapper h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 50px;
+  position: relative;
+}
+.edwrapper h1::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #00b4d8;
+  border-radius:10px;
+}
+.edintro {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.7;
+
+}
+.eddetails {
+  display: flex;
+  flex-direction: column;
+}
+.edblock {
+  padding: 25px 0;
+  border-top: 1px solid #00b4d8;
+}
+.edblock h3 {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.edblock p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 2;
+}
+.edblock span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #3339;
+}
+.prosection {
+  margin-top: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.prowrapper {
+  max-width: 1000px;
+  text-align: center;
+}
+.prowrapper h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+.prointro {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 50px;
+  line-height: 1.7;
+}
+.procontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.procard {
+  flex: 1 1 300px;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.procard img {
+  width: 100%;
+  height: 220px;
+  object-fit:cover;
+  border-radius: 5px;
+}
+.procard h3 {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+.procard span {
+  display: block;
+  margin-top: 10px;
+  color: #444;
+  font-size: 0.85rem;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+
+}
+.content {
+  background: whitesmoke;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.content img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.content h2 {
+  margin-bottom: 10px;
+  color: black;
+}
+.content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.content #links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.contact h2{
+  font-weight: 800;
+  text-align: center;
+}
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact input, .contact textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #333;
+}
+#formMsg {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+#name{
+  max-width: 300px;
+}
+#email{
+  max-width:300px;
+}
+#text{
+  max-width: 500px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .home{
+    min-height: 500px;
+  }
+  .procard {
+    flex: 1 1 100%;
+  }
+
+  .content img {
+    max-height: 200px;
+  }
+  .edsection {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .edwrapper h1 {
+    font-size: 2rem;
+  }
+  .aboutcon {
+    flex-direction: column;
+    text-align: center;
+  }
+  .allsidebar{
+    width: 80px;
+  }
+  .profilepicture{
+    width:60px;
+    height: 65px;
+  }
+  .profileid{
+    height: 400px;
+  }
+  .profileid h1{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .socialmedia{
+    flex-direction: column;
+  }
+  .sidebar a{
+    font-size: 0.8rem;
+  }
+  .sidebar{
+    margin-top: 50px;
+    margin-left: -30px;
+  }
+  .main-content{
+    padding-left: 85px;
+    padding-right:5px;
+
+  }
+  .home{
+    flex-direction: column;
+  }
+  .welcome{
+    width: 90%;
+    height: 42vh;
+
+  }
+  .myphoto{
+    width:90%;
+  }
+  .sitephoto{
+    height: 250px;
+    margin-top: 0;
+  }
+  #welcome h1{
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  #welcome p{
+    font-size:0.8rem;
+    line-height: 1.2;
+  }
+  .contact form{
+    width: 80%;
+    align-items: center;
+    padding-bottom: 50px; 
+  }
+  .buttons, .buttons a{
+    margin-top: 0;
+    gap: 10px;
+    font-size: 0.7rem;
+  }
+  #aboutmebtn, #cvbtn{
+    width: 70px;
+  }
+  .skillcard{
+  flex: 1 1 120px;
+  max-width: 120px;
+  }
+  .aboutme{
+    padding: 10px;
+  }
+  .about p, .skills p, .edwrapper p, .prowrapper p, .prowrapper h3{
+    font-size: 0.8rem;
+  }
+  .about h1, .skills h2, .edwrapper h1, .prowrapper h1{
+    font-size: 1.8rem;
+  }
+ }
