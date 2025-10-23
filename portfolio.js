@@ -4,14 +4,14 @@
     title: "HAJEM — Fast Food Project",
     img: "./images/HAJEMsc.png",
     desc: "Built with HTML, CSS, and JavaScript. Includes interactive menus, responsive layout, and clean design for a fast food concept.",
-    links: `<a href="#" target="_blank">View Code</a> <a href="#" target="_blank">Live Demo</a>`
+    links: `<a href="https://github.com/Lekazhubi/hajem" target="_blank">View Code</a> <a href="https://lekazhubi.github.io/hajem/" target="_blank">Live Demo</a>`
   },
 
  onfilm: {
     title: "ONFILM — Favorite Movies",
     img: "./images/ONFILMsc.png",
     desc: "Created a personal movie collection site. Learned API integration, dynamic content, and responsive layouts.",
-    links: `<a href="#" target="_blank">View Code</a> <a href="#" target="_blank">Live Demo</a>`
+    links: `<a href="https://github.com/Lekazhubi/onfilm" target="_blank">View Code</a> <a href="https://lekazhubi.github.io/onfilm/" target="_blank">Live Demo</a>`
   },
 
   coming: {
@@ -68,5 +68,6 @@ form.addEventListener("submit", function(e) {
     formMsg.textContent = "⏳ Sending...";
     formMsg.style.color = "blue";
   }
+
 
 });
